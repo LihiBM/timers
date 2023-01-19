@@ -12,9 +12,9 @@ docker-compose up
 ```
 
 ## Endpoints:
-* POST/setTimer<br>Example request:
+* POST/timer<br>Example request:
 ```
-http://localhost:3000/setTimer
+http://localhost:3000/timer
 ```
 Example payload:
 ```
@@ -25,13 +25,13 @@ Example payload:
     "url": "http://www.google.com"
 }
 ```
-* GET/getTimerById<br>Example request
+* GET/timer/{id}<br>Example request
 ```
-http://localhost:3000/getTimers/63c82c2018153dd660bbd77c
+http://localhost:3000/timer/63c82c2018153dd660bbd77c
 ```
 here the resource ID is the timer ID previously set.
 
-* GET/getAllTimers<br>Returns all timers, active and inactive.
+* GET/timer<br>Returns all timers, active and inactive.
 
 ## Important pointers
 * Times are saved in UTC standard
