@@ -12,9 +12,9 @@ docker-compose up
 ```
 
 ## Endpoints:
-* POST/timer<br>Example request:
+* POST/timers<br>Example request:
 ```
-http://localhost:3000/timer
+http://localhost:3000/timers
 ```
 Example payload:
 ```
@@ -25,18 +25,18 @@ Example payload:
     "url": "http://www.google.com"
 }
 ```
-* GET/timer/{id}<br>Example request
+* GET/timers/{id}<br>Example request
 ```
-http://localhost:3000/timer/63c82c2018153dd660bbd77c
+http://localhost:3000/timers/63c82c2018153dd660bbd77c
 ```
 here the resource ID is the timer ID previously set.
 
-* GET/timer<br>Returns all timers, active and inactive.
+* GET/timers<br>Returns all timers, active and inactive.
 
 ## Important pointers
 * Times are saved in UTC standard
 
 ## Options for additional dev:
 - Adding a testing suite
-- Adding pagination for `GET/timer`
+- Adding pagination for `GET/timers`
 - Making the logger save logs remotely
