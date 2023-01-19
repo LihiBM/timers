@@ -38,5 +38,5 @@ here the resource ID is the timer ID previously set.
 
 ## Options for additional dev:
 - Adding a testing suite
-- Adding pagination for `getAllTimers`
+- Adding pagination for `GET/timer`
 - Making the logger save logs remotely
